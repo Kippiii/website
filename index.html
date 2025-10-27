@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Ian Orzel</title>
     <link rel="stylesheet" href="static/bootstrap/css/bootstrap.css">
+    <script src="static/bootstrap/js/bootstrap.js"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -17,7 +18,7 @@
     <div class="container">
       <div class="row">
         <div class="col-4">
-          <img src="static/img/me.jpg" class="img-fluid">
+          <img src="static/img/me.JPG" class="img-fluid">
         </div>
         <div class="col-8">
           <h1>
@@ -36,15 +37,98 @@
             explores lower bounds and computability results on polynomial equations.
             For inquiries, you can reach me at iano (at) di (dot) ku (dot) dk.
           </p>
-          <h3>Contact Details</h3>
-          <p>
-            Department of Computer Science,<br>
-            University of Copenhagen,<br>
-            Universitetsparken 1<br>
-            2100 Copenhagen Ø.<br>
-          </p>
         </div>
       </div>
+
+      <h1>Research Papers</h1>
+      <div class="accordion" id="researchpapers">
+	<div class="accordion-item">
+	  <h2 class="accordion-header" id="headerOrz25">
+	    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOrz25" aria-expanded="true" aria-controls="collapseOrz25">
+	      Computing the Elementary Symmetric Polynomials in Positive Characteristics
+	    </button>
+	  </h2>
+	  <div id="collapseOrz25" class="accordion-collapse collapse" aria-labelledby="headingOrz25" data-bs-parent="#researchpapers">
+	    <div class="accordion-body">
+	      <p>Authors: <a href="#">Ian Orzel</a></p>
+	      <p>
+		Abstract:
+		We first extend the results of Chatterjee, Kumar, Shi, Volk (Computational Complexity 2022) by showing that the degree d elementary symmetric polynomials in n variables have formula lower bounds of \Omega(d(n-d)) over fields of positive characteristic. Then, we show that the results of the universality of the symmetric model from Shpilka (Journal of Computer and System Sciences 2002) and the results about border fan-in two \Sigma\Pi\Sigma circuits from Kumar (ACM Trans. Comput. Theory 2020) over zero characteristic fields do not extend to fields of positive characteristic. In particular, we show that * There are polynomials that cannot be represented as linear projections of the elementary symmetric polynomials (in fact, we show that they cannot be represented as the sum of k such projections for a fixed k) and * There are polynomials that cannot be computed by border depth-3 circuits of top fan-in k, called \overline{\Sigma^{[k]}\Pi\Sigma}, for k = o(n).
+To prove the first result, we consider a geometric property of the elementary symmetric polynomials, namely, the set of all points in which the polynomial and all of its first-order partial derivatives vanish. It was shown in Meckler, Zaimi and Limaye, Mittal, Pareek that the dimension of this space was exactly d-2 for fields of zero characteristic. We extend this to fields of positive characteristic by showing that this dimension must be between d-2 and d-1. In fact, we show this bound is tight.
+Then, to consider the border top fan-in of the symmetric model and depth-3 circuits (sometimes called border affine Chow rank), we show that it is sufficient to consider the border top fan-in of the sum of linear projections of the elementary symmetric polynomials. This is done by constructing an explicit metapolynomial to check the condition, meaning that this result also applies in the border setting.
+	      </p>
+	      <p>[<a href="https://arxiv.org/abs/2509.05009">Arxiv</a>][<a href="https://eccc.weizmann.ac.il/report/2025/128/">ECCC</a>]</p>
+	    </div>
+	  </div>
+	</div>
+        <div class="accordion-item">
+	  <h2 class="accordion-header" id="headerOSTY25">
+	    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOSTY25" aria-expanded="true" aria-controls="collapseOSTY25">
+	      The Algebraic Cost of a Boolean Sum
+	    </button>
+	  </h2>
+	  <div id="collapseOSTY25" class="accordion-collapse collapse" aria-labelledby="headingOSTY25" data-bs-parent="#researchpapers">
+	    <div class="accordion-body">
+	      <p>Authors: <a href="#">Ian Orzel</a>, <a href="https://srikanth-srinivasan.bitbucket.io">Srikanth Srinivasan</a>, <a href="https://tavenas.pages.math.cnrs.fr">Sébastien Tavenas</a>, <a href="https://amiryehudayoff.github.io/home/">Amir Yehudayoff</a></p>
+	      <p>
+		Abstract:
+		It is a well-known fact that the permanent polynomial is complete for the complexity class VNP, and it is largely suspected that the determinant does not share this property, despite its similar expression. We study the question of why the VNP-completeness proof of the permanent fails for the determinant. We isolate three fundamental properties that are sufficient to prove a polynomial sequence is VNP-hard, of which two are shared by both the permanent and the determinant. We proceed to show that the permanent satisfies the third property, which we refer to as the ``cost of a boolean sum," while the determinant does not, showcasing the fundamental difference between the polynomial families. We further note that this differentiation also applies in the border complexity setting and that our results apply for counting complexity.
+	      </p>
+	      <p>[FSTTCS25][<a href="https://arxiv.org/abs/2502.02442">Arxiv</a>][<a href="https://eccc.weizmann.ac.il/report/2025/099/">ECCC</a>]</p>
+	    </div>
+	  </div>
+	</div>
+        <div class="accordion-item">
+	  <h2 class="accordion-header" id="headerEOW25">
+	    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEOW25" aria-expanded="true" aria-controls="collapseEOW25">
+	      Bessmertnyĭ realizations of symmetric multivariate rational matrix functions over any field
+	    </button>
+	  </h2>
+	  <div id="collapseEOW25" class="accordion-collapse collapse" aria-labelledby="headingEOW25" data-bs-parent="#researchpapers">
+	    <div class="accordion-body">
+	      <p>Authors: <a href="https://sites.google.com/view/jasonelsinger">Jason Elsinger</a>, <a href="#">Ian Orzel</a>, <a href="http://www.aaronwelters.com">Aaron Welters</a></p>
+	      <p>
+		Abstract:
+		In this paper, we prove the following. First, every square matrix whose entries are multivariable rational functions over a field F has a Bessmertnyĭ realization, i.e., is the Schur complement of an affine linear square matrix pencil with coefficients in F. Second, if the matrix is also symmetric and the characteristic of the field F is not two then it has a symmetric Bessmertnyĭ realization (i.e., the pencil can be chosen to consist of symmetric matrices) and counterexamples are given to prove this statement is false in general for fields of characteristic two. Third, for fields of characteristic two (e.g., binary or Boolean field), we completely characterize those functions that have a symmetric Bessmertnyĭ realization. Finally, analogous results hold when restricted to the class of homogeneous degree-one rational functions. To solve these realization problems, i.e., finding such structured Bessmertnyĭ realizations for a given multivariate rational function, we use state-space methods from systems theory to produce realizations for algebraic operations on Schur complements such as sums, products, inverses, and symmetrization, which become the elementary building blocks of our constructions. Further complications arise over fields of characteristic two, so a large part of the paper is devoted to developing additional methods to decide if the symmetric realization problem can be solved and, if so, to construction the symmetric realization for a given symmetric rational matrix function. Our motivations are discussed in the context of multidimensional linear systems theory on generalizing state-space representations for rational functions including the Givone-Roesser and Fornasini-Marchesini realizations.
+	      </p>
+	      <p>[<a href="https://arxiv.org/abs/2509.00553">Arxiv</a>]</p>
+	    </div>
+	  </div>
+	</div>
+      </div>
+
+      <h1>Talks</h1>
+      <div class="accordion" id="researchtalks">
+	<div class="accordion-item">
+	  <h2 class="accordion-header" id="headerAN25">
+	    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAN25" aria-expanded="true" aria-controls="collapseAN25">
+	      Multivariable Rational Matrix Functions: Synthesis Constraints Using Reciprocal Electrical Networks
+	    </button>
+	  </h2>
+	  <div id="collapseAN25" class="accordion-collapse collapse" aria-labelledby="headingAN25" data-bs-parent="#researchtalks">
+	    <div class="accordion-body">
+	      <p>We present our recent theorem, and its proof, that resolves an open problem posed to me as an undergraduate by my research advisor, Aaron Welters (Florida Institute of Technology), in Jan. 2022. Our results can be summarized as follows. First, every square matrix whose entries are multivariable rational functions over a field F
+ in n indeterminates z1,…,zn
+ has a Bessmertnyi realization, i.e., is the Schur complement of an affine linear square matrix pencil with coefficients in F
+. Second, if the matrix is also symmetric and either n=1
+ or the characteristic of the field F
+ is not two then it has a symmetric Bessmertnyi realization (i.e., the pencil can be chosen to consist of symmetric matrices). For all other cases (i.e., when n≥2
+ and the characteristic of F
+ is two), we give counterexamples and, in particular, show there is a class of multivariate rational functions that cannot be synthesized from the response matrix of any reciprocal electrical network over fields of characteristic two (e.g., Boolean networks). A specific example of this is given that illustrates the result using the Y
+-Δ
+		transform. Finally, we conclude with a complete characterization of the class of functions with symmetric Bessmertnyi realizations. This is joint work with Jason Elsinger and Aaron Welters.</p>
+	      <p>[<a href="talks/AN25.pdf">Slides</a>][<a href="https://meetings.siam.org/sess/dsp_talk.cfm?p=148841">AN25</a>]</p>
+	    </div>
+	  </div>
+        </div>
+      </div>
+      <h3>Contact Details</h3>
+        <p>
+          Department of Computer Science,<br>
+          University of Copenhagen,<br>
+          Universitetsparken 1<br>
+          2100 Copenhagen Ø.<br>
+        </p>
     </div>
   </body>
 </html>
