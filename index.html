@@ -6,6 +6,7 @@
     <title>Ian Orzel</title>
     <link rel="stylesheet" href="static/bootstrap/css/bootstrap.css">
     <script src="static/bootstrap/js/bootstrap.js"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -14,7 +15,7 @@
       <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body style="background-color: #C5C5C5">
+  <body style="background-color: white">
     <div class="container">
       <div class="row mt-4">
         <div class="col-4">
@@ -30,6 +31,21 @@
             <a href="https://www.researchgate.net/profile/Ian-Orzel?ev=hdr_xprf"><img src="static/img/research_gate.png" width="25px"></a>
             <a href="https://dblp.org/pid/399/5520.html"><img src="static/img/dblp.png" width="25px"></a>
           </h1>
+	  <h4>
+	    PhD Student
+	  </h4>
+	  <h4>
+	    Advisor: <a href="https://srikanth-srinivasan.bitbucket.io">Srikanth Srinivasan</a>
+	  </h4>
+	  <h4>
+	    Group: <a href="https://barc.ku.dk">Basic Algorithms Research Copenhagen (BARC)</a>
+	  </h4>
+          <p>
+	  Department of Computer Science,<br>
+	  University of Copenhagen,<br>
+	  Universitetsparken 1<br>
+	    2100 Copenhagen Ø
+	  </p>
           <p class="lead">
             I am a PhD student advised by
             <a href="https://srikanth-srinivasan.bitbucket.io">Srikanth Srinivasan</a>
@@ -45,6 +61,41 @@
 
       <h1 class="mt-4">Research Papers</h1>
       <div class="accordion" id="researchpapers">
+	<div class="accordion-item">
+	  <h2 class="accordion-header" id="headerBCKLOSW26">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBCKLOSW26" aria-expanded="true" aria-controls="collapseBCKLOSW26">
+              Beyond Bilinear Complexity: What Works and What Breaks with Many Modes?
+	    </button>
+	  </h2>
+	  <div id="collapseBCKLOSW26" class="accordion-collapse collapse" aria-labelledby="headingBCKLOSW26" data-bs-parent="#researchpapers">
+	    <div class="accordion-body">
+	      <p>
+	        Authors:
+		<a href="https://sites.google.com/view/corneliusbrand">Cornelius Brand</a>,
+		<a href="https://www.uni-regensburg.de/informatik-data-science/fakultaet/einrichtungen/algorithmen-und-komplexitaetstheorie/team/radu-curticapean">Radu Curticapean</a>,
+		<a href="https://www.aalto.fi/en/people/petteri-kaski">Petteri Kaski</a>,
+		<a href="https://www.cs.columbia.edu/~baitian/">Baitian Li</a>,
+		<a href="#">Ian Orzel</a>,
+		<a href="https://tseppelt.github.io">Tim Seppelt</a>, and
+		<a href="https://pw384.github.io">Jiaheng Wang</a>
+	      </p>
+	      <p>
+	      Abstract:
+	      The complexity of bilinear maps (equivalently, of $3$-mode tensors) has been studied extensively, most notably in the context of matrix multiplication. While circuit complexity and tensor rank coincide asymptotically for $3$-mode tensors, this correspondence breaks down for $d \geq 4$ modes. As a result, the complexity of $d$-mode tensors for larger fixed $d$ remains poorly understood, despite its relevance, e.g., in fine-grained complexity. Our paper explores this intermediate regime.
+
+    First, we give a ``graph-theoretic'' proof of Strassen's $2\omega/3$ bound on the asymptotic rank exponent of $3$-mode tensors. Our proof directly generalizes to an upper bound of $(d-1)\omega/3$ for $d$-mode tensors. Using refined techniques available only for $d\geq 4$ modes, we improve this bound beyond the current state of the art for $\omega$.
+    We also obtain a bound of $d/2+1$ on the asymptotic exponent of \emph{circuit complexity} of generic $d$-mode tensors and optimized bounds for $d \in \{4,5\}$.
+
+    To the best of our knowledge, asymptotic circuit complexity (rather than rank) of tensors has not been studied before.
+    To obtain a robust theory, we first ask whether low complexity of $T$ and $U$ imply low complexity of their Kronecker product $T \otimes U$.
+    While this crucially holds for rank (and thus for circuit complexity in $3$ modes), we show that assumptions from fine-grained complexity rule out such a \emph{submultiplicativity} for the circuit complexity of tensors with many modes. In particular, assuming the Hyperclique Conjecture, this failure occurs already for $d=8$ modes.
+    Nevertheless, we can salvage a restricted notion of submultiplicativity.
+
+    From a technical perspective, our proofs heavily make use of the \emph{graph tensors} $T_H$, as employed by Christandl and Zuiddam ({\em Comput.~Complexity}~28~(2019)~27--56) and Christandl, Vrana and Zuiddam ({\em Comput.~Complexity}~28~(2019)~57--111), whose modes correspond to the vertices of undirected graphs $H$. We make the simple but conceptually crucial observation that Kronecker products $T_G \otimes T_H$ are isomorphic to $T_{G+H}$, and that $G$ and $H$ may also be \emph{fractional} graphs. By asymptotically converting generic tensors to specific graph tensors, we can use nontrivial results from algorithmic graph theory to study the rank and complexity of $d$-mode tensors for fixed $d$.              </p>
+               <p>[<a href="https://arxiv.org/abs/2602.11975">Arxiv</a>][<a href="https://eccc.weizmann.ac.il/report/2026/025/">ECCC</a>]</p>
+	     </div>
+	   </div>
+	 </div>
 	<div class="accordion-item">
 	  <h2 class="accordion-header" id="headerOrz25">
 	    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOrz25" aria-expanded="true" aria-controls="collapseOrz25">
@@ -125,13 +176,62 @@ Then, to consider the border top fan-in of the symmetric model and depth-3 circu
 	  </div>
         </div>
       </div>
-      <h3 class="mt-4">Contact Details</h3>
-        <p>
-          Department of Computer Science,<br>
-          University of Copenhagen,<br>
-          Universitetsparken 1<br>
-          2100 Copenhagen Ø.<br>
-        </p>
+
+      <h1 class="mt-4">Other Writings</h1>
+      <div class="accordion" id="otherwritings">
+        <div class="accordion-item">
+          <h2 class=:accordion-header" id="headermastersthesis">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapsemastersthesis" aria-expanded="true" aria-controls="collapsemastersthesis">
+		    On Geometric Methods and Incompleteness Results in Algebraic Complexity<br> Master's Thesis
+            </button>
+	  </h2>
+	  <div id="collapsemastersthesis" class="accordion-collapse collapse" aria-labelledby="headingmastersthesis" data-bs-parent="#otherwritings">
+	    <div class="accordion-body">
+	      <p>We study foundational and recent results in algebraic complexity theory re-
+lated to the singular loci of polynomials, the Hessians of polynomials, vanishing
+
+subspaces on polynomials, and projections of elementary symmetric polynomi-
+als. Specifically, we study how these results are influenced by the characteristic
+
+of the underlying field as well as whether they hold in the border complexity
+setting. We study representing polynomials as projections of the elementary
+symmetric polynomials and find that not all polynomials can be represented
+in this way over fields of nonzero characteristic. This result also works in the
+border setting. We further study the singular loci of the elementary symmetric
+polynomials over fields of nonzero characteristic, allowing us to generalize some
+results that were only known to be true over characteristic zero. We finally
+study and obtain partial results when considering some of these methods in
+fields of nonzero characteristic and in the border setting.
+              </p>
+	      <p>[<a href=".">Text</a>]</p>
+	    </div>
+	  </div>
+	</div>
+	<div class="accordion-item">
+	  <h2 class="accordion-header" id="headerthesisprep">
+	    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapsethesisprep" aria-expanded="true" aria-controls="collapsethesisprep">
+		    Recent Results and Open Questions on Lower Bounds of the Determinantal Complexity and Related Computational Models<br> Master's Thesis Preparation Project
+	    </button>
+	  </h2>
+	  <div id="collapsethesisprep" class="accordion-collapse collapse" aria-labelledby="headingthesisprep" data-bs-parent="#otherwritings">
+	    <div class="accordion-body">
+	      <p>[<a href=".">Text</a>]</p>
+	    </div>
+	  </div>
+	</div>
+	<div class="accordion-item">
+	  <h2 class="accordion-header" id="headerPUK">
+	    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePUK" aria-expanded="true" aria-controls="collapsePUK">
+		    Completeness Classes and Lower Bounds in Algebraic Complexity Theory<br> Master's Project Outside Coursescope
+	    </button>
+	  </h2>
+	  <div id="collapsePUK" class="accordion-collapse collapse" aria-labelledby="headingPUK" data-bs-parent="#otherwritings">
+	    <div class="accordion-body">
+	      <p>[<a href=".">Text</a>]</p>
+	    </div>
+	  </div>
+	</div>
+      </div>
     </div>
   </body>
 </html>
