@@ -81,17 +81,17 @@
 	      </p>
 	      <p>
 	      Abstract:
-	      The complexity of bilinear maps (equivalently, of $3$-mode tensors) has been studied extensively, most notably in the context of matrix multiplication. While circuit complexity and tensor rank coincide asymptotically for $3$-mode tensors, this correspondence breaks down for $d \geq 4$ modes. As a result, the complexity of $d$-mode tensors for larger fixed $d$ remains poorly understood, despite its relevance, e.g., in fine-grained complexity. Our paper explores this intermediate regime.
+	      The complexity of bilinear maps (equivalently, of \(3\)-mode tensors) has been studied extensively, most notably in the context of matrix multiplication. While circuit complexity and tensor rank coincide asymptotically for \(3\)-mode tensors, this correspondence breaks down for \(d \geq 4\) modes. As a result, the complexity of \(d\)-mode tensors for larger fixed \(d\) remains poorly understood, despite its relevance, e.g., in fine-grained complexity. Our paper explores this intermediate regime.
 
-    First, we give a ``graph-theoretic'' proof of Strassen's $2\omega/3$ bound on the asymptotic rank exponent of $3$-mode tensors. Our proof directly generalizes to an upper bound of $(d-1)\omega/3$ for $d$-mode tensors. Using refined techniques available only for $d\geq 4$ modes, we improve this bound beyond the current state of the art for $\omega$.
+    First, we give a "graph-theoretic" proof of Strassen's \(2\omega/3\) bound on the asymptotic rank exponent of \(3\)-mode tensors. Our proof directly generalizes to an upper bound of \((d-1)\omega/3\) for \(d\)-mode tensors. Using refined techniques available only for \(d\geq 4\) modes, we improve this bound beyond the current state of the art for \(\omega\).
     We also obtain a bound of $d/2+1$ on the asymptotic exponent of \emph{circuit complexity} of generic $d$-mode tensors and optimized bounds for $d \in \{4,5\}$.
 
     To the best of our knowledge, asymptotic circuit complexity (rather than rank) of tensors has not been studied before.
-    To obtain a robust theory, we first ask whether low complexity of $T$ and $U$ imply low complexity of their Kronecker product $T \otimes U$.
-    While this crucially holds for rank (and thus for circuit complexity in $3$ modes), we show that assumptions from fine-grained complexity rule out such a \emph{submultiplicativity} for the circuit complexity of tensors with many modes. In particular, assuming the Hyperclique Conjecture, this failure occurs already for $d=8$ modes.
+    To obtain a robust theory, we first ask whether low complexity of \(T\) and \(U\) imply low complexity of their Kronecker product \(T \otimes U\).
+    While this crucially holds for rank (and thus for circuit complexity in \(3\) modes), we show that assumptions from fine-grained complexity rule out such a <i>submultiplicativity</i> for the circuit complexity of tensors with many modes. In particular, assuming the Hyperclique Conjecture, this failure occurs already for \(d=8\) modes.
     Nevertheless, we can salvage a restricted notion of submultiplicativity.
 
-    From a technical perspective, our proofs heavily make use of the \emph{graph tensors} $T_H$, as employed by Christandl and Zuiddam ({\em Comput.~Complexity}~28~(2019)~27--56) and Christandl, Vrana and Zuiddam ({\em Comput.~Complexity}~28~(2019)~57--111), whose modes correspond to the vertices of undirected graphs $H$. We make the simple but conceptually crucial observation that Kronecker products $T_G \otimes T_H$ are isomorphic to $T_{G+H}$, and that $G$ and $H$ may also be \emph{fractional} graphs. By asymptotically converting generic tensors to specific graph tensors, we can use nontrivial results from algorithmic graph theory to study the rank and complexity of $d$-mode tensors for fixed $d$.              </p>
+    From a technical perspective, our proofs heavily make use of the <i>graph tensors</i> \(T_H\), as employed by Christandl and Zuiddam ({\em Comput.~Complexity}~28~(2019)~27--56) and Christandl, Vrana and Zuiddam ({\em Comput.~Complexity}~28~(2019)~57--111), whose modes correspond to the vertices of undirected graphs \(H\). We make the simple but conceptually crucial observation that Kronecker products \(T_G \otimes T_H\) are isomorphic to \(T_{G+H}\), and that \(G\) and \(H\) may also be <i>fractional</i> graphs. By asymptotically converting generic tensors to specific graph tensors, we can use nontrivial results from algorithmic graph theory to study the rank and complexity of \(d\)-mode tensors for fixed \(d\).              </p>
                <p>[<a href="https://arxiv.org/abs/2602.11975">Arxiv</a>][<a href="https://eccc.weizmann.ac.il/report/2026/025/">ECCC</a>]</p>
 	     </div>
 	   </div>
@@ -107,9 +107,13 @@
 	      <p>Authors: <a href="#">Ian Orzel</a></p>
 	      <p>
 		Abstract:
-		We first extend the results of Chatterjee, Kumar, Shi, Volk (Computational Complexity 2022) by showing that the degree d elementary symmetric polynomials in n variables have formula lower bounds of \Omega(d(n-d)) over fields of positive characteristic. Then, we show that the results of the universality of the symmetric model from Shpilka (Journal of Computer and System Sciences 2002) and the results about border fan-in two \Sigma\Pi\Sigma circuits from Kumar (ACM Trans. Comput. Theory 2020) over zero characteristic fields do not extend to fields of positive characteristic. In particular, we show that * There are polynomials that cannot be represented as linear projections of the elementary symmetric polynomials (in fact, we show that they cannot be represented as the sum of k such projections for a fixed k) and * There are polynomials that cannot be computed by border depth-3 circuits of top fan-in k, called \overline{\Sigma^{[k]}\Pi\Sigma}, for k = o(n).
-To prove the first result, we consider a geometric property of the elementary symmetric polynomials, namely, the set of all points in which the polynomial and all of its first-order partial derivatives vanish. It was shown in Meckler, Zaimi and Limaye, Mittal, Pareek that the dimension of this space was exactly d-2 for fields of zero characteristic. We extend this to fields of positive characteristic by showing that this dimension must be between d-2 and d-1. In fact, we show this bound is tight.
-Then, to consider the border top fan-in of the symmetric model and depth-3 circuits (sometimes called border affine Chow rank), we show that it is sufficient to consider the border top fan-in of the sum of linear projections of the elementary symmetric polynomials. This is done by constructing an explicit metapolynomial to check the condition, meaning that this result also applies in the border setting.
+		We first extend the results of Chatterjee, Kumar, Shi, Volk (Computational Complexity 2022) by showing that the degree d elementary symmetric polynomials in \(n\) variables have formula lower bounds of \(\Omega(d(n-d))\) over fields of positive characteristic. Then, we show that the results of the universality of the symmetric model from Shpilka (Journal of Computer and System Sciences 2002) and the results about border fan-in two \(\Sigma\Pi\Sigma\) circuits from Kumar (ACM Trans. Comput. Theory 2020) over zero characteristic fields do not extend to fields of positive characteristic. In particular, we show that
+		<ul>
+			<li>There are polynomials that cannot be represented as linear projections of the elementary symmetric polynomials (in fact, we show that they cannot be represented as the sum of \(k\) such projections for a fixed \(k\)) and</li>
+		  <li>There are polynomials that cannot be computed by border depth-\(3\) circuits of top fan-in \(k\), called \(\overline{\Sigma^{[k]}\Pi\Sigma}\), for \(k = o(n)\).</li>
+		</ul>
+                To prove the first result, we consider a geometric property of the elementary symmetric polynomials, namely, the set of all points in which the polynomial and all of its first-order partial derivatives vanish. It was shown in Meckler, Zaimi and Limaye, Mittal, Pareek that the dimension of this space was exactly \(d-2\) for fields of zero characteristic. We extend this to fields of positive characteristic by showing that this dimension must be between \(d-2\) and \(d-1\). In fact, we show this bound is tight.
+Then, to consider the border top fan-in of the symmetric model and depth-\(3\) circuits (sometimes called border affine Chow rank), we show that it is sufficient to consider the border top fan-in of the sum of linear projections of the elementary symmetric polynomials. This is done by constructing an explicit metapolynomial to check the condition, meaning that this result also applies in the border setting.
 	      </p>
 	      <p>[<a href="https://arxiv.org/abs/2509.05009">Arxiv</a>][<a href="https://eccc.weizmann.ac.il/report/2025/128/">ECCC</a>]</p>
 	    </div>
@@ -126,9 +130,13 @@ Then, to consider the border top fan-in of the symmetric model and depth-3 circu
 	      <p>Authors: <a href="#">Ian Orzel</a>, <a href="https://srikanth-srinivasan.bitbucket.io">Srikanth Srinivasan</a>, <a href="https://tavenas.pages.math.cnrs.fr">Sébastien Tavenas</a>, <a href="https://amiryehudayoff.github.io/home/">Amir Yehudayoff</a></p>
 	      <p>
 		Abstract:
-		It is a well-known fact that the permanent polynomial is complete for the complexity class VNP, and it is largely suspected that the determinant does not share this property, despite its similar expression. We study the question of why the VNP-completeness proof of the permanent fails for the determinant. We isolate three fundamental properties that are sufficient to prove a polynomial sequence is VNP-hard, of which two are shared by both the permanent and the determinant. We proceed to show that the permanent satisfies the third property, which we refer to as the ``cost of a boolean sum," while the determinant does not, showcasing the fundamental difference between the polynomial families. We further note that this differentiation also applies in the border complexity setting and that our results apply for counting complexity.
+		It is a well-known fact that the permanent polynomial is complete for the complexity class VNP, and it is largely suspected that the determinant does not share this property, despite its similar expression. We study the question of why the VNP-completeness proof of the permanent fails for the determinant. We isolate three fundamental properties that are sufficient to prove a polynomial sequence is VNP-hard, of which two are shared by both the permanent and the determinant. We proceed to show that the permanent satisfies the third property, which we refer to as the "cost of a boolean sum," while the determinant does not, showcasing the fundamental difference between the polynomial families. We further note that this differentiation also applies in the border complexity setting and that our results apply for counting complexity.
 	      </p>
-	      <p>[FSTTCS25][<a href="https://arxiv.org/abs/2502.02442">Arxiv</a>][<a href="https://eccc.weizmann.ac.il/report/2025/099/">ECCC</a>]</p>
+	      <p>
+	        [<a href="talks/FSTTCS2025.pdf">Slides</a>]
+		[<a href="https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.FSTTCS.2025.47">FSTTCS25</a>]
+		[<a href="https://arxiv.org/abs/2502.02442">Arxiv</a>][<a href="https://eccc.weizmann.ac.il/report/2025/099/">ECCC</a>]
+	      </p>
 	    </div>
 	  </div>
 	</div>
@@ -161,13 +169,13 @@ Then, to consider the border top fan-in of the symmetric model and depth-3 circu
 	  </h2>
 	  <div id="collapseAN25" class="accordion-collapse collapse" aria-labelledby="headingAN25" data-bs-parent="#researchtalks">
 	    <div class="accordion-body">
-	      <p>We present our recent theorem, and its proof, that resolves an open problem posed to me as an undergraduate by my research advisor, Aaron Welters (Florida Institute of Technology), in Jan. 2022. Our results can be summarized as follows. First, every square matrix whose entries are multivariable rational functions over a field F
- in n indeterminates z1,…,zn
- has a Bessmertnyi realization, i.e., is the Schur complement of an affine linear square matrix pencil with coefficients in F
-. Second, if the matrix is also symmetric and either n=1
- or the characteristic of the field F
- is not two then it has a symmetric Bessmertnyi realization (i.e., the pencil can be chosen to consist of symmetric matrices). For all other cases (i.e., when n≥2
- and the characteristic of F
+	      <p>We present our recent theorem, and its proof, that resolves an open problem posed to me as an undergraduate by my research advisor, Aaron Welters (Florida Institute of Technology), in Jan. 2022. Our results can be summarized as follows. First, every square matrix whose entries are multivariable rational functions over a field \(F\)
+ in \(n\) indeterminates \(z1,…,zn\)
+ has a Bessmertnyi realization, i.e., is the Schur complement of an affine linear square matrix pencil with coefficients in \(F\)
+. Second, if the matrix is also symmetric and either \(n=1\)
+ or the characteristic of the field \(F\)
+ is not two then it has a symmetric Bessmertnyi realization (i.e., the pencil can be chosen to consist of symmetric matrices). For all other cases (i.e., when \(n≥2\)
+ and the characteristic of \(F\)
  is two), we give counterexamples and, in particular, show there is a class of multivariate rational functions that cannot be synthesized from the response matrix of any reciprocal electrical network over fields of characteristic two (e.g., Boolean networks). A specific example of this is given that illustrates the result using the Y
 -Δ
 		transform. Finally, we conclude with a complete characterization of the class of functions with symmetric Bessmertnyi realizations. This is joint work with Jason Elsinger and Aaron Welters.</p>
